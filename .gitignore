@@ -1,3 +1,5 @@
 **.docx
 .git
 .vscode
+**/__pycache__
+cplex.log
