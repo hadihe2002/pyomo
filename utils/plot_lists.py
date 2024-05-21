@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
 
 
-def plot_lists(array, title="Sensitivity analysis", xlabel="Parameter Value", ylabel="Objective Function"):
-    iterations = range(1, len(array)+1)
+def plot_lists(array, xticks, title="Sensitivity analysis", xlabel="Parameter Value", ylabel="Objective Function", ):
+    plt.plot(xticks, array, marker='o')
 
-    plt.plot(iterations, array)
+    plt.xticks(xticks)
 
     plt.title(title)
     plt.xlabel(xlabel)
